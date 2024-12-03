@@ -40,6 +40,40 @@ body {
     z-index: 1;
 }
 
+/* Styl dla ekranu logowania */
+#login-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-screen input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+}
+
+#login-screen button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-screen #error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
 /* Styl dla textarea */
 textarea {
     width: 600px;
