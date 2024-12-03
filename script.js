@@ -147,4 +147,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const audio = document.getElementById('romanticMusic');
         audio.play();
     };
+
+    // Funkcja sprawdzania hasła
+    window.checkPassword = function() {
+        const passwordInput = document.getElementById('password');
+        const errorMessage = document.getElementById('error-message');
+        const mainContent = document.getElementById('main-content');
+        const loginScreen = document.getElementById('login-screen');
+        const password = 'tajnehaslo';  // Ustaw swoje hasło
+
+        if (passwordInput.value === password) {
+            loginScreen.classList.add('hidden');
+            mainContent.classList.remove('hidden');
+        } else {
+            errorMessage.textContent = 'Niepoprawne hasło. Spróbuj ponownie.';
+        }
+    };
 });
