@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const errorMessage = document.getElementById('error-message');
         const mainContent = document.getElementById('main-content');
         const loginScreen = document.getElementById('login-screen');
-        const password = 'tajnehaslo';  // Ustaw swoje hasło
+        const password = 'kot';  // Ustaw swoje hasło
 
         if (passwordInput.value === password) {
             loginScreen.classList.add('hidden');
