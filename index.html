@@ -13,11 +13,18 @@
         <!-- Tutaj będą obrazy -->
     </div>
     <div class="container">
-        <textarea readonly>Tu możesz dodać tekst</textarea>
+        <div id="login-screen">
+            <input type="password" id="password" placeholder="Wpisz hasło">
+            <button onclick="checkPassword()">Wejdź</button>
+            <p id="error-message"></p>
+        </div>
+        <div id="main-content" class="hidden">
+            <textarea readonly>Tu możesz dodać tekst</textarea>
+            <!-- Dodajemy element audio -->
+            <audio id="romanticMusic" src="https://www.bensound.com/bensound-music/bensound-love.mp3" loop></audio>
+            <button class="play-music" onclick="playMusic()">Odtwórz Muzykę</button>
+        </div>
     </div>
-    <!-- Dodajemy element audio -->
-    <audio id="romanticMusic" src="https://www.bensound.com/bensound-music/bensound-love.mp3" loop></audio>
-    <button class="play-music" onclick="playMusic()">Odtwórz Muzykę</button>
     <script src="script.js"></script>
 </body>
 </html>
