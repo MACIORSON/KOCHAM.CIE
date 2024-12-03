@@ -141,4 +141,10 @@ document.addEventListener('DOMContentLoaded', () => {
             createKocham(x, y);
         }
     });
+
+    // Funkcja odtwarzania muzyki
+    window.playMusic = function() {
+        const audio = document.getElementById('romanticMusic');
+        audio.play();
+    };
 });
