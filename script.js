@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Funkcja odtwarzania muzyki
     window.playMusic = function() {
-        const audio = document.getElementById('romanticMusic');
+        const audio = document.getElementById('taco');
         audio.play();
     };
 
