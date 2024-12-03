@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: #ffe4e1;
+    background: linear-gradient(to right, #ffe4e1, #ff69b4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,6 +54,7 @@ textarea {
     color: #ff69b4;
     text-align: center;
     pointer-events: none;
+    font-family: 'Dancing Script', cursive;
 }
 
 /* Styl dla serc */
@@ -92,6 +93,7 @@ textarea {
     font-size: 24px;
     color: #ff69b4;
     animation: fadeOut 5s forwards;
+    font-family: 'Great Vibes', cursive;
 }
 
 /* Animacja zanikania */
@@ -102,4 +104,19 @@ textarea {
     100% {
         opacity: 0;
     }
+}
+
+/* Styl dla przycisku odtwarzania muzyki */
+.play-music {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
 }
